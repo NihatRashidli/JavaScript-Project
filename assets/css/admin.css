@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1;
+  background-color: #ecf0f1;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+td {
+  width: 600px;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+}
+
+.edit-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-btn {
+  background-color: #448f13;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100px;
+  text-transform: uppercase;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.edit-button:hover {
+  background-color: #2980b9;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+.row {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.myModal {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 3px 10px;
+  background-color: black;
+}
+.register {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.blackBack {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.6;
+  position: fixed;
+  filter: blur(50px);
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+}
